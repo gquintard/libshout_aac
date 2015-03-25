@@ -1,0 +1,14 @@
+Example aac plugin for libshout.
+You'll need the WIP/plugins branch from
+https://github.com/gquintard/Icecast-libshout that need to be configured with
+--enable-plugins (and optionally the PLUGIN_DIR variable)
+
+Configure need two variables :
+PLUGIN_DIR: where to install the plugin
+SHOUTSRC: a path to libshout source
+
+To use it, instead of shout_set_format, use shout_set_mime with "audio/aac"
+for example.
+
+
+Most of the code here comes from https://github.com/codders/libshout
